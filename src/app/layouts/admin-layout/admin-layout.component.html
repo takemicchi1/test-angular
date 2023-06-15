@@ -1,1 +1,21 @@
-<p>admin-layout works!</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+          <aside>
+            <ul style="list-style-type: none;">
+                <li><a routerLink="/admin/dashboard">Dashboard</a></li>
+                <li><a routerLink="products">Products</a></li>
+                <li><a routerLink="product/add">Product Add</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-9">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+</div>
