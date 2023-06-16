@@ -8,10 +8,11 @@ import { AdminProductAddComponent } from './pages/admin/admin-product-add/admin-
 import { AdminProductEditComponent } from './pages/admin/admin-product-edit/admin-product-edit.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { authGuard } from './auth.guard';
 
 const routes: Routes = [
   {path: "", component: BaseLayoutComponent},
-  {path: "admin", component: AdminLayoutComponent, children:[
+  {path: "admin", component: AdminLayoutComponent, canActivate:[authGuard], children:[
     {path: "", redirectTo:"dashboard", pathMatch:"full"},
     {path: "dashboard", component: DashboardComponent},
     {path: "products", component: AdminProductListComponent},

@@ -1,5 +1,12 @@
-import { CanActivateFn } from '@angular/router';
+import { Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { AuthService } from './services/auth.service';
+import { Observable } from 'rxjs';
 
-export const authGuard: CanActivateFn = (route, state) => {
-  return true;
-};
+@Injectable({
+  providedIn: 'root',
+})
+
+export class authGuard{
+  
+}

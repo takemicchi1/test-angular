@@ -8,9 +8,20 @@
   ],
   "users": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "email": "phuongancut@gmail.com",
+      "password": "$2a$10$SbfFS8dkzHXSZdCVzcRG6egUu3GUUxrdguwjLyZLy1Yl6YiUrNc12",
+      "username": "Phuong an cut",
+      "repeatPassword": "",
+      "role": "",
+      "id": 2
+    },
+    {
+      "email": "phuongnguvcl@gmail.com",
+      "password": "$2a$10$E9BMoV5iXCpLWJq.x.2.D.ApWwb/PJhicWv5czPGxYftRmf.tCzMC",
+      "username": "Phuong ngu vcl",
+      "repeatpassword": "Phuongnguvcl123",
+      "role": "admin",
+      "id": 3
     }
   ]
 }
