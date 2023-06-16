@@ -5,20 +5,25 @@
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" formControlName="username" class="form-control" id="username">
-            
+            <span style="color: red" *ngIf="">Username is required</span>
+            <span style="color: red" *ngIf="">Username must be least 3 characters long</span>
           </div>
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" formControlName="email" class="form-control" id="email">
-          
+          <span style="color: red" *ngIf="">email is required</span>
+            <span style="color: red" *ngIf="">email is not valid</span>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" formControlName="password" class="form-control" id="password">
+          <span style="color: red" *ngIf="">password is required</span>
+            <span style="color: red" *ngIf="">password must be least 6 characters long</span>
         </div>
         <div class="form-group">
           <label for="repeatpassword">Repeat password</label>
-          <input type="repeatpassword" formControlName="repeatpassword" class="form-control" id="repeatpassword">
+          <input type="password" formControlName="repassword" class="form-control" id="repeatpassword">
+          <span style="color: red" *ngIf="">Repeat password is not match</span>
         </div>
         <div class="form-group">
             <input type="hidden" formControlName="role" value="admin" class="form-control" id="role">

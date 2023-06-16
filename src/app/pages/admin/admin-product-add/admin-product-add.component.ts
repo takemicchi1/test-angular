@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-admin-product-add',
@@ -6,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-product-add.component.css']
 })
 export class AdminProductAddComponent {
-
+  
 }

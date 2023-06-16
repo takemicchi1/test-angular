@@ -6,7 +6,7 @@
     </ol>
   </nav>
   <h1 class="my-3">Product edit</h1>
-  <form class="w-75">
+  <form class="w-75" >
     <div class="form-group">
       <label for="name">Name</label>
       <input
@@ -39,6 +39,13 @@
         (ngModelChange)="displayImage()"
       /><br /> -->
       <!-- <img [src]="imageURL" *ngIf="imageURL" class="rounded" width="100px" height="100px" alt=""> -->
+      <input
+        type="text"
+        id="img"
+        class="form-control"
+        formControlName="img"
+        placeholder="Image"
+      /><br />
     </div>
     <button type="submit" class="btn btn-primary" >
       Submit

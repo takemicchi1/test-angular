@@ -6,7 +6,7 @@
     </ol>
   </nav>
   <h1 class="my-3">Product add</h1>
-  <form  class="w-75">
+  <form class="w-75" >
     <div class="form-group">
       <label for="name">Name</label>
       <input
@@ -16,6 +16,8 @@
         formControlName="name"
         placeholder="Name"
       /><br />
+      <span style="color: red" *ngIf="">Name is required</span>
+      <span style="color: red" *ngIf="">Name must be least 3 characters long</span>
     </div>
     <div class="form-group">
       <label for="price">Price</label>
@@ -26,6 +28,8 @@
         formControlName="price"
         placeholder="Price"
       /><br />
+      <span style="color: red" *ngIf="">Price is required</span>
+      <span style="color: red" *ngIf="">Price must be interger</span>
     </div>
     <div class="form-group">
       <label for="img">Image</label>
@@ -39,6 +43,14 @@
         (ngModelChange)="displayImage()"
       /><br /> -->
       <!-- <img [src]="imageURL" *ngIf="imageURL" class="rounded" width="100px" height="100px" alt=""> -->
+      <input
+        type="text"
+        id="img"
+        class="form-control"
+        formControlName="img"
+        placeholder="Image"
+      /><br />
+      <span style="color: red" *ngIf="">Image is required</span>
     </div>
     <button type="submit" class="btn btn-primary" >
       Submit

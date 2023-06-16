@@ -10,5 +10,13 @@ export class AuthService {
   constructor(
     private http: HttpClient
   ) { }
-  
+  signup(user:any):Observable<any>{
+    return this.http.post('http://localhost:3000/signup', user)
+  }
+  signin(user:any):Observable<any>{
+    return this.http.post('http://localhost:3000/signin', user)
+  }
+  isAuth():any{
+    return JSON.parse(localStorage.getItem('user') || '{}')
+  }
 }

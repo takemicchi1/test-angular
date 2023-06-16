@@ -1,20 +1,19 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "san pham 1 updated",
+      "price": 251,
+      "img": "https://i.pinimg.com/564x/5b/6f/b5/5b6fb50b3061e833f2cbc39f0e5332cf.jpg",
+      "id": 1
+    },
+    {
+      "name": "phuong ngu",
+      "price": 1000,
+      "img": "https://i.pinimg.com/564x/c8/6f/af/c86fafbd69448195d3a7697f60613924.jpg",
+      "id": 2
     }
   ],
   "users": [
-    {
-      "email": "phuongancut@gmail.com",
-      "password": "$2a$10$SbfFS8dkzHXSZdCVzcRG6egUu3GUUxrdguwjLyZLy1Yl6YiUrNc12",
-      "username": "Phuong an cut",
-      "repeatPassword": "",
-      "role": "",
-      "id": 2
-    },
     {
       "email": "phuongnguvcl@gmail.com",
       "password": "$2a$10$E9BMoV5iXCpLWJq.x.2.D.ApWwb/PJhicWv5czPGxYftRmf.tCzMC",
@@ -22,6 +21,46 @@
       "repeatpassword": "Phuongnguvcl123",
       "role": "admin",
       "id": 3
+    },
+    {
+      "email": "phuongngu@gmail.com",
+      "password": "$2a$10$.kPBOOY9ki6Va3RIZFqUB.nBuZYvrCZjyNd2Fm1E7ME88CJKLCnR.",
+      "username": "Phuong ngu vcl",
+      "repassword": "Phuong123",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "email": "khachhang1@gmail.com",
+      "password": "$2a$10$JQT3JkwNEQvyYPceplHD/O7U1QQEqRnVO3gcX8kVoMmSZaQSHJyNO",
+      "username": "khach hang 1",
+      "repassword": "Khachhang123",
+      "role": "admin",
+      "id": 5
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$XTpSecbWAa9kQCcTCmS9muQf/hRgPj1Jk6WVqZxA1.na5.7/a0wgO",
+      "username": "khach ",
+      "repassword": "123456",
+      "role": "admin",
+      "id": 6
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2a$10$IgEFp4xHlC8eh.mKndhYee7Nzzxvjpog/aznt1bCuQR3.D8py4FDG",
+      "username": "admin",
+      "repassword": "Admin123",
+      "role": "admin",
+      "id": 7
+    },
+    {
+      "email": "admin2@gmail.com",
+      "password": "$2a$10$peEajWLd.WXnLTmV6LGqbexFhKJsf4/kK1C8rXPM0/Fj3qn2jjM7S",
+      "username": "admin",
+      "repassword": "Admin123",
+      "role": "admin",
+      "id": 8
     }
   ]
 }

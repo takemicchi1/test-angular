@@ -7,6 +7,4 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 
-export class authGuard{
-  
-}
+export class authGuard {}
